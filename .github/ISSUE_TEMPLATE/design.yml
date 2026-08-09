@@ -1,0 +1,55 @@
+name: "🎨 디자인 수정"
+description: "CSS, UI 디자인, 이미지 등 화면 관련 수정 작업을 정의합니다."
+title: "[Design] "
+labels: ["🎨 Design"]
+body:
+  - type: textarea
+    id: target
+    attributes:
+      label: "🎯 수정 대상"
+      description: "수정할 화면, 컴포넌트 또는 페이지를 작성해주세요."
+      placeholder: |
+        - 대상 화면 / 페이지:
+        - 관련 컴포넌트:
+        - 관련 파일:
+    validations:
+      required: true
+
+  - type: textarea
+    id: changes
+    attributes:
+      label: "🎨 변경 내용"
+      description: "적용할 UI, CSS, 레이아웃 또는 인터랙션 변경 사항을 작성해주세요."
+      placeholder: |
+        - 현재 문제:
+        - 변경할 디자인:
+        - 반응형 / 상태별 고려 사항:
+    validations:
+      required: true
+
+  - type: textarea
+    id: assets
+    attributes:
+      label: "🖼️ 이미지 및 에셋 (선택 사항)"
+      description: "추가하거나 교체할 이미지, 아이콘, 폰트 또는 디자인 시안이 있다면 작성해주세요."
+      placeholder: |
+        - 에셋 종류:
+        - 출처 / 링크:
+        - 적용 위치:
+    validations:
+      required: false
+
+  - type: textarea
+    id: tasks
+    attributes:
+      label: "✅ 세부 작업 목록 (To-Do)"
+      description: "디자인 수정을 위한 작업 단계를 체크리스트로 작성해주세요."
+      placeholder: |
+        - [ ] 디자인 요구사항 및 대상 화면 확인
+        - [ ] UI / CSS 수정
+        - [ ] 필요한 이미지 및 에셋 적용
+        - [ ] 반응형 및 주요 상태 확인
+        - [ ] 변경 결과 캡처 또는 확인
+    validations:
+      required: true
+
