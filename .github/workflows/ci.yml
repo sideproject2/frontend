@@ -1,0 +1,12 @@
+name: 🧪 CI
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    name: 🧪 프론트엔드 테스트 실행
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🔍 프론트엔드 테스트 실행
+        run: echo "프론트엔드 테스트 실행"
